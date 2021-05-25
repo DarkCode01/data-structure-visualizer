@@ -18,12 +18,15 @@
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
     // Place to specify and overwrite ESLint rules
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "semi": ["error", "always"],
+    "quotes": ["error", "doubles"]
   }
 }
