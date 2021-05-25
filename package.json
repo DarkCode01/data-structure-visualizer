@@ -26,9 +26,7 @@
     "prettier": "2.3.0",
     "typescript": "4.2.4"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
