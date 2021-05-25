@@ -27,6 +27,6 @@
     "typescript": "4.2.4"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown '**' '!**/*.{js,jsx,tsx,ts}'"
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
