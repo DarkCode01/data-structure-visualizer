@@ -5,6 +5,7 @@ import HwHeader from "@/components/HweHeader";
 import HwHeaderElement from "@/components/HwHeaderElement";
 import HwBanner from "@/components/HwBanner";
 import HwButton from "@/components/HwButton";
+import HwSearch from "@/components/HwSearch";
 
 const Home = () => {
   return (
@@ -20,7 +21,9 @@ const Home = () => {
             <HwButton>Contribute</HwButton>
           </HwHeaderElement>
         </HwHeader>
-        <HwContainer>Contribute</HwContainer>
+        <HwContainer>
+          <HwSearch />
+        </HwContainer>
       </div>
     </Page>
   );
