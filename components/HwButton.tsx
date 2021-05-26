@@ -5,11 +5,11 @@ const HwButton = styled.button`
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
 
   border-radius: 10px;
   border: none;
-  background-color: var(--color-primary);
+  background-color: #000;
+  color: white;
 `;
 
 export default HwButton;

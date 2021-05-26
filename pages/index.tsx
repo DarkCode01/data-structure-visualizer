@@ -13,7 +13,7 @@ import HwActionTop from "@/components/HwActionTop";
 const Home = () => {
   return (
     <Page>
-      <div>
+      <div id="main-content">
         <HwHeader>
           <HwHeaderElement>
             <HwBanner>
@@ -35,7 +35,7 @@ const Home = () => {
             <HwLanguage>Go</HwLanguage>
           </HwListLanguage>
 
-          <HwActionTop>UP</HwActionTop>
+          <HwActionTop />
         </HwContainer>
       </div>
     </Page>

@@ -1,14 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const HwGlobalStyles = createGlobalStyle`
-:root {
-   /* Color variables */
-   --color-primary: #6ec5b8;
-   --color-secondary: #f87575;
-   --color-black: #252b38;
-   --color-white: #ffffff;
- } 
- /* Resets */
 html {
    box-sizing: border-box;
  }
@@ -28,7 +20,7 @@ html {
  body {
    background-color: #f5f4f5;
    font-family: DejaVuSansMono, monospace, sans-serif;
-   color: var(--color-black);
+   color: #000;
  }
  
  h1,
