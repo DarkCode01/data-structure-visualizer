@@ -17,3 +17,8 @@ export default function Page({ children, title, description }: PageProps) {
     </>
   );
 }
+
+Page.defaultProps = {
+  title: "Hello Worlds",
+  description: "Hello World output in most programming languages 👨‍💻👩‍💻"
+};
