@@ -7,7 +7,8 @@
       "@/hooks/*": ["core/hooks"],
       "@/utils/*": ["core/utils"],
       "@/api/*": ["core/api"],
-      "@/model/*": ["core/models"]
+      "@/model/*": ["core/types"],
+      "@/props/*": ["core/props"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
