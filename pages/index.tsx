@@ -6,6 +6,8 @@ import HwHeaderElement from "@/components/HwHeaderElement";
 import HwBanner from "@/components/HwBanner";
 import HwButton from "@/components/HwButton";
 import HwSearch from "@/components/HwSearch";
+import HwListLanguage from "@/components/HwListLanguage";
+import HwLanguage from "@/components/HwLanguage";
 
 const Home = () => {
   return (
@@ -23,6 +25,15 @@ const Home = () => {
         </HwHeader>
         <HwContainer>
           <HwSearch />
+          <HwListLanguage>
+            <HwLanguage>Elixir</HwLanguage>
+            <HwLanguage>Js</HwLanguage>
+            <HwLanguage>Python</HwLanguage>
+            <HwLanguage>Go</HwLanguage>
+            <HwLanguage>Go</HwLanguage>
+            <HwLanguage>Go</HwLanguage>
+            <HwLanguage>Go</HwLanguage>
+          </HwListLanguage>
         </HwContainer>
       </div>
     </Page>
