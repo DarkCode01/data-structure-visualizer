@@ -8,6 +8,7 @@ import HwButton from "@/components/HwButton";
 import HwSearch from "@/components/HwSearch";
 import HwListLanguage from "@/components/HwListLanguage";
 import HwLanguage from "@/components/HwLanguage";
+import HwActionTop from "@/components/HwActionTop";
 
 const Home = () => {
   return (
@@ -32,8 +33,9 @@ const Home = () => {
             <HwLanguage>Go</HwLanguage>
             <HwLanguage>Go</HwLanguage>
             <HwLanguage>Go</HwLanguage>
-            <HwLanguage>Go</HwLanguage>
           </HwListLanguage>
+
+          <HwActionTop>UP</HwActionTop>
         </HwContainer>
       </div>
     </Page>
