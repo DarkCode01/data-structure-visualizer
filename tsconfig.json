@@ -7,7 +7,7 @@
       "@/hooks/*": ["core/hooks"],
       "@/utils/*": ["core/utils"],
       "@/api/*": ["core/api"],
-      "@/model/*": ["core/types"],
+      "@/types/*": ["core/types"],
       "@/props/*": ["core/props"]
     },
     "target": "es5",

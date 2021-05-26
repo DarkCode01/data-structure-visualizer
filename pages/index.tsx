@@ -27,12 +27,12 @@ const Home = () => {
         <HwContainer>
           <HwSearch />
           <HwListLanguage>
-            <HwLanguage>Elixir</HwLanguage>
-            <HwLanguage>Js</HwLanguage>
-            <HwLanguage>Python</HwLanguage>
-            <HwLanguage>Go</HwLanguage>
-            <HwLanguage>Go</HwLanguage>
-            <HwLanguage>Go</HwLanguage>
+            <HwLanguage logo="c==" ext="py,py,c" name="c++" />
+            <HwLanguage logo="c==" ext="py,py,c" name="c++" />
+            <HwLanguage logo="c==" ext="py,py,c" name="c++" />
+            <HwLanguage logo="c==" ext="py,py,c" name="c++" />
+            <HwLanguage logo="c==" ext="py,py,c" name="c++" />
+            <HwLanguage logo="c==" ext="py,py,c" name="c++" />
           </HwListLanguage>
 
           <HwActionTop />

@@ -1,5 +1,5 @@
-export interface Language {
+export type Language = {
   logo: string;
   name: string;
   ext: string;
-}
+};
