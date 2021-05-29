@@ -9,7 +9,7 @@ export default function Page({ children, title, description }: PageProps) {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta property="og:title" content={title} />
-        <meta property="og:site_name" content="Hello Worlds" />
+        <meta property="og:site_name" content="JS Event Loop - Simulator" />
         <meta property="og:description" content={description} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -19,6 +19,6 @@ export default function Page({ children, title, description }: PageProps) {
 }
 
 Page.defaultProps = {
-  title: "Hello Worlds",
-  description: "Hello World output in most programming languages 👨‍💻👩‍💻"
+  title: "JS Event Loop - Simulator",
+  description: "Made with <3 and fun :D"
 };
