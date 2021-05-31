@@ -4,6 +4,10 @@ const HwGlobalStyles = createGlobalStyle`
 html {
    box-sizing: border-box;
  }
+
+ :root {
+   --primary: rgb(28, 37, 49);
+ }
  
  *,
  *::before,
