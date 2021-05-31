@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import ELEditor from "@/components/ELEditor/ELEditor";
+import ELBox from "@/components/ELBox";
 import ELStackItem from "./ELItem";
 
-const ELStackBase = styled(ELEditor)`
+const ELStackBase = styled(ELBox)`
   display: flex;
   flex-direction: column-reverse;
-  padding: 10px;
   grid-gap: 10px;
 `;
 
