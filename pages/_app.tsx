@@ -1,10 +1,10 @@
 import type { AppProps } from "next/app";
-import HwGlobalStyles from "@/components/HwGlobalStyles";
+import ELGlobalStyles from "@/components/ELGlobalStyle";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <HwGlobalStyles />
+      <ELGlobalStyles />
       <Component {...pageProps} />
     </>
   );
