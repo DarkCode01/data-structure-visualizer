@@ -11,11 +11,12 @@ const ELEditor = styled.div`
     content: "${({ placeholder }) => placeholder || "Code"}";
     position: relative;
     top: 10px;
-    left: 20px;
+    left: 10px;
     color: gray;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 20px;
   }
 `;
 
