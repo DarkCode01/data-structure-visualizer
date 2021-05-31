@@ -1,11 +1,11 @@
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import styled from "styled-components";
 import ELBox from "@/components/ELBox";
 
 // import code editor using dynamic import
-const AceEditor = dynamic(() => import("react-ace"), { ssr: false });
-dynamic(() => import("ace-builds/src-noconflict/mode-javascript"), { ssr: false });
-dynamic(() => import("ace-builds/src-noconflict/theme-github"), { ssr: false });
+// const AceEditor = dynamic(() => import("react-ace"), { ssr: false });
+// dynamic(() => import("ace-builds/src-noconflict/mode-javascript"), { ssr: false });
+// dynamic(() => import("ace-builds/src-noconflict/theme-github"), { ssr: false });
 
 const ELEditorBase = styled(ELBox)`
   padding: 0;
@@ -19,7 +19,8 @@ const ELEditorBase = styled(ELBox)`
 export default function ELEditor() {
   return (
     <ELEditorBase placeholder="">
-      <AceEditor
+      Errror
+      {/* <AceEditor
         placeholder="Hello :D"
         mode="javascript"
         theme="monokai"
@@ -40,7 +41,7 @@ export default function ELEditor() {
         }}
         width="100%"
         wrapEnabled={true}
-      />
+      /> */}
     </ELEditorBase>
   );
 }

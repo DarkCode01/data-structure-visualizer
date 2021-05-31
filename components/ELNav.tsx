@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ELButton from "@/components/ELButton";
 
 const ELNavBase = styled.nav`
   display: flex;
@@ -11,29 +12,10 @@ const ELNavBase = styled.nav`
   -moz-box-shadow: 0px 14px 36px 6px var(--primary-dark);
 `;
 
-const ELNavButton = styled.button`
-  padding: 6px 15px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  font-size: 20px;
-  /* width: 97vw; */
-
-  &.active,
-  &:hover {
-    background-color: rgb(42, 51, 65);
-  }
-`;
-
 export default function ELNav() {
   return (
     <ELNavBase>
-      <ELNavButton className="active">clear</ELNavButton>
-      <ELNavButton>step next</ELNavButton>
-      <ELNavButton>step preview</ELNavButton>
-      <ELNavButton>run</ELNavButton>
+      <ELButton className="active">Add Item [stack]</ELButton>
     </ELNavBase>
   );
 }
