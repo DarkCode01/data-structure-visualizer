@@ -5,11 +5,15 @@ import ELContainer from "@/components/ELContainer";
 import ELStructure from "@/components/ELStructure";
 import ELEditor from "@/components/ELEditor/ELEditor";
 import ELStack from "@/components/ELStack/ELStack";
+import { push, pop } from "@/app/store/stackSlice";
+import { useAppDispatch } from "@/app/store/hooks";
 
 const Home = () => {
+  const dispatch = useAppDispatch();
+
   return (
     <Page>
-      <ELNav />
+      <ELNav addItemToCallStack={() => dispatch(push("func2()"))} removeItemFromCallStack={() => dispatch(pop())} />
       <ELContainer>
         <ELEditor />
         <ELStructure>

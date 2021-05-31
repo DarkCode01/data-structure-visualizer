@@ -12,10 +12,20 @@ const ELNavBase = styled.nav`
   -moz-box-shadow: 0px 14px 36px 6px var(--primary-dark);
 `;
 
-export default function ELNav() {
+interface IELNavProps {
+  addItemToCallStack: () => void;
+  removeItemFromCallStack: () => void;
+}
+
+export default function ELNav({ addItemToCallStack, removeItemFromCallStack }: IELNavProps) {
   return (
     <ELNavBase>
-      <ELButton className="active">Add Item [stack]</ELButton>
+      <ELButton className="active" onClick={addItemToCallStack}>
+        Add Item [stack]
+      </ELButton>
+      <ELButton className="active" onClick={removeItemFromCallStack}>
+        Remove Item [stack]
+      </ELButton>
     </ELNavBase>
   );
 }

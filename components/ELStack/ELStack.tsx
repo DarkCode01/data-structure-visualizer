@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ELBox from "@/components/ELBox";
 import ELStackItem from "./ELItem";
+import { useAppSelector } from "@/app/store/hooks";
 
 const ELStackBase = styled(ELBox)`
   display: flex;
@@ -13,10 +14,13 @@ export interface IELStackProps {
 }
 
 export default function ELStack({ placeholder }: IELStackProps) {
+  const items = useAppSelector((state) => state.call.items);
+
   return (
     <ELStackBase placeholder={placeholder} className="stack">
-      <ELStackItem>console.log()</ELStackItem>
-      <ELStackItem>sumer()</ELStackItem>
+      {items.map((value, index) => (
+        <ELStackItem key={index}>{value}</ELStackItem>
+      ))}
     </ELStackBase>
   );
 }
