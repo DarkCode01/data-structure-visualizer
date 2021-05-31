@@ -22,7 +22,7 @@ html {
  }
  
  body {
-   background-color: #f5f4f5;
+   background-color: var(--primary);
    font-family: DejaVuSansMono, monospace, sans-serif;
    color: #000;
  }

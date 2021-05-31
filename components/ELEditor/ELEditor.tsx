@@ -16,21 +16,6 @@ const ELEditorBase = styled(ELBox)`
   }
 `;
 
-const ELEditorWrappers = styled.div`
-  display: flex;
-  position: absolute;
-  /* top: 20px; */
-  /* left: 600px; */
-  grid-gap: 10px;
-`;
-
-const ELEditorButton = styled.button`
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid gray;
-  cursor: pointer;
-`;
-
 export default function ELEditor() {
   return (
     <ELEditorBase placeholder="">
@@ -56,11 +41,6 @@ export default function ELEditor() {
         width="100%"
         wrapEnabled={true}
       />
-      <ELEditorWrappers>
-        {/* <ELEditorButton>Undo</ELEditorButton> */}
-        {/* <ELEditorButton>Stop</ELEditorButton> */}
-        <ELEditorButton>Run</ELEditorButton>
-      </ELEditorWrappers>
     </ELEditorBase>
   );
 }

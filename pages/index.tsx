@@ -1,5 +1,6 @@
 import React from "react";
 import Page from "@/components/Page";
+import ELNav from "@/components/ELNav";
 import ELContainer from "@/components/ELContainer";
 import ELStructure from "@/components/ELStructure";
 import ELEditor from "@/components/ELEditor/ELEditor";
@@ -8,6 +9,7 @@ import ELStack from "@/components/ELStack/ELStack";
 const Home = () => {
   return (
     <Page>
+      <ELNav />
       <ELContainer>
         <ELEditor />
         <ELStructure>
