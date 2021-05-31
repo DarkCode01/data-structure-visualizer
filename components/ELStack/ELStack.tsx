@@ -8,15 +8,15 @@ const ELStackBase = styled(ELBox)`
   grid-gap: 10px;
 `;
 
-// TODO: create props types for component
-export default function ELStack({ placeholder }) {
+export interface IELStackProps {
+  placeholder: string;
+}
+
+export default function ELStack({ placeholder }: IELStackProps) {
   return (
     <ELStackBase placeholder={placeholder} className="stack">
-      <ELStackItem>d1</ELStackItem>
-      <ELStackItem>das</ELStackItem>
-      {/* <ELStackItem />
-      <ELStackItem />
-      <ELStackItem /> */}
+      <ELStackItem>console.log()</ELStackItem>
+      <ELStackItem>sumer()</ELStackItem>
     </ELStackBase>
   );
 }

@@ -7,6 +7,8 @@ html {
 
  :root {
    --primary: rgb(28, 37, 49);
+   --primary-light: rgb(31, 41, 55);
+   --primary-dark: rgb(25, 33, 44);
  }
  
  *,

@@ -3,12 +3,12 @@ import styled from "styled-components";
 const ELNavBase = styled.nav`
   display: flex;
   padding: 10px 20px;
-  background-color: var(--primary);
   grid-gap: 10px;
+  background-color: var(--primary-light);
 
-  box-shadow: 0px 14px 31px 6px rgba(28, 37, 49, 1);
-  -webkit-box-shadow: 0px 14px 31px 6px rgba(28, 37, 49, 1);
-  -moz-box-shadow: 0px 14px 31px 6px rgba(28, 37, 49, 1);
+  box-shadow: 0px 14px 36px 6px var(--primary-dark);
+  -webkit-box-shadow: 0px 14px 36px 6px var(--primary-dark);
+  -moz-box-shadow: 0px 14px 36px 6px var(--primary-dark);
 `;
 
 const ELNavButton = styled.button`
@@ -19,6 +19,7 @@ const ELNavButton = styled.button`
   background-color: transparent;
   color: white;
   font-size: 20px;
+  /* width: 97vw; */
 
   &.active,
   &:hover {

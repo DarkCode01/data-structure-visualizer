@@ -24,8 +24,8 @@ export default function ELEditor() {
         mode="javascript"
         theme="monokai"
         name="code"
-        maxLines={40}
-        minLines={40}
+        maxLines={39}
+        minLines={39}
         onChange={(s) => console.log(s)}
         showPrintMargin={true}
         showGutter={true}

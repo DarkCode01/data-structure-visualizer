@@ -3,17 +3,21 @@ import styled from "styled-components";
 const ELBox = styled.div`
   height: 100%;
   width: 100%;
-  border: 1px solid black;
   border-radius: 20px;
-  background-color: white;
+  background-color: var(--primary-light);
   padding: 10px;
+  color: ;
+
+  box-shadow: 0px 14px 36px 6px var(--primary-dark);
+  -webkit-box-shadow: 0px 14px 36px 6px var(--primary-dark);
+  -moz-box-shadow: 0px 14px 36px 6px var(--primary-dark);
 
   &::before {
     content: "${({ placeholder }) => placeholder}";
     position: relative;
     top: 10px;
     left: 10px;
-    color: gray;
+    color: whitesmoke;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
