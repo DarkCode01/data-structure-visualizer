@@ -1,23 +1,22 @@
 import styled from "styled-components";
-import ELEditor from "@/components/ELEditor/ELEditor";
+import ELBox from "@/components/ELBox";
 import ELStackItem from "./ELItem";
 
-const ELStackBase = styled(ELEditor)`
+const ELStackBase = styled(ELBox)`
   display: flex;
   flex-direction: column-reverse;
-  padding: 10px;
   grid-gap: 10px;
 `;
 
-// TODO: create props types for component
-export default function ELStack({ placeholder }) {
+export interface IELStackProps {
+  placeholder: string;
+}
+
+export default function ELStack({ placeholder }: IELStackProps) {
   return (
     <ELStackBase placeholder={placeholder} className="stack">
-      <ELStackItem>d1</ELStackItem>
-      <ELStackItem>das</ELStackItem>
-      {/* <ELStackItem />
-      <ELStackItem />
-      <ELStackItem /> */}
+      <ELStackItem>console.log()</ELStackItem>
+      <ELStackItem>sumer()</ELStackItem>
     </ELStackBase>
   );
 }

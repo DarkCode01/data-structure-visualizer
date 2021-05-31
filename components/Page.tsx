@@ -1,8 +1,13 @@
 import React from "react";
 import Head from "next/head";
-import { PageProps } from "@/app/props/Page";
 
-export default function Page({ children, title, description }: PageProps) {
+export interface IPageProps {
+  children: Array<JSX.Element>;
+  title: string;
+  description: string;
+}
+
+export default function Page({ children, title, description }: IPageProps) {
   return (
     <>
       <Head>

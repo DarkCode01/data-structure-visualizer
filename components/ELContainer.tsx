@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   padding: 10px 20px;
-  height: 100vh;
-  width: 100vw;
+  height: 94vh;
   background-color: var(--primary);
 
   display: grid;

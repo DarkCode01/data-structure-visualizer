@@ -7,6 +7,8 @@ html {
 
  :root {
    --primary: rgb(28, 37, 49);
+   --primary-light: rgb(31, 41, 55);
+   --primary-dark: rgb(25, 33, 44);
  }
  
  *,
@@ -22,7 +24,7 @@ html {
  }
  
  body {
-   background-color: #f5f4f5;
+   background-color: var(--primary);
    font-family: DejaVuSansMono, monospace, sans-serif;
    color: #000;
  }
