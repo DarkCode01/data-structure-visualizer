@@ -5,6 +5,7 @@ import ELContainer from "@/components/ELContainer";
 import ELStructure from "@/components/ELStructure";
 import ELEditor from "@/components/ELEditor/ELEditor";
 import ELStack from "@/components/ELStack/ELStack";
+import ElQueue from "@/components/ELQueue";
 import { push, pop } from "@/app/store/stackSlice";
 import { useAppDispatch } from "@/app/store/hooks";
 
@@ -21,6 +22,7 @@ const Home = () => {
           {/* <ELEditor placeholder="Call Stack" className="stack" /> */}
           {/* <ELStack className="api" placeholder="Web API" /> */}
           {/* <ELStack className="queue" placeholder="Callback Queue" /> */}
+          <ElQueue placeholder="" />
         </ELStructure>
       </ELContainer>
     </Page>
